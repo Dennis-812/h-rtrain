@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IT Governance Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">Portfolio Project</p>
+      <h1>IT Governance & Provider Dashboard</h1>
+      <p class="hero-text">
+        Ein kompaktes Dashboard zur Übersicht von Providern, Projektstatus,
+        Risiken und offenen Maßnahmen.
+      </p>
+    </div>
+    <button id="toggleThemeBtn">Dark Mode</button>
+  </header>
+
+  <main>
+    <section class="kpi-grid">
+      <article class="kpi-card">
+        <span class="kpi-label">Aktive Provider</span>
+        <strong>4</strong>
+      </article>
+
+      <article class="kpi-card">
+        <span class="kpi-label">Offene Risiken</span>
+        <strong>7</strong>
+      </article>
+
+      <article class="kpi-card">
+        <span class="kpi-label">SLA-Erfüllung</span>
+        <strong>94%</strong>
+      </article>
+
+      <article class="kpi-card">
+        <span class="kpi-label">Offene Maßnahmen</span>
+        <strong>12</strong>
+      </article>
+    </section>
+
+    <section class="toolbar">
+      <h2>Provider-Status</h2>
+      <select id="statusFilter">
+        <option value="all">Alle anzeigen</option>
+        <option value="green">Nur grün</option>
+        <option value="yellow">Nur gelb</option>
+        <option value="red">Nur rot</option>
+      </select>
+    </section>
+
+    <section class="provider-grid" id="providerGrid">
+      <article class="provider-card" data-status="green">
+        <div class="card-header">
+          <h3>CloudOps GmbH</h3>
+          <span class="status green">Stabil</span>
+        </div>
+        <p>Cloud-Infrastruktur & Monitoring</p>
+        <ul>
+          <li>SLA: 98%</li>
+          <li>Letztes Audit: bestanden</li>
+          <li>Risiko: niedrig</li>
+        </ul>
+      </article>
+
+      <article class="provider-card" data-status="yellow">
+        <div class="card-header">
+          <h3>SecureNet AG</h3>
+          <span class="status yellow">Beobachten</span>
+        </div>
+        <p>Cyber Security Operations</p>
+        <ul>
+          <li>SLA: 91%</li>
+          <li>Audit-Nachweise offen</li>
+          <li>Risiko: mittel</li>
+        </ul>
+      </article>
+
+      <article class="provider-card" data-status="red">
+        <div class="card-header">
+          <h3>DataBridge IT</h3>
+          <span class="status red">Kritisch</span>
+        </div>
+        <p>Datenintegration & Schnittstellen</p>
+        <ul>
+          <li>SLA: 82%</li>
+          <li>Mehrere Incidents</li>
+          <li>Risiko: hoch</li>
+        </ul>
+      </article>
+
+      <article class="provider-card" data-status="green">
+        <div class="card-header">
+          <h3>ServiceDesk Plus</h3>
+          <span class="status green">Stabil</span>
+        </div>
+        <p>IT-Support & Ticketing</p>
+        <ul>
+          <li>SLA: 96%</li>
+          <li>Reaktionszeit verbessert</li>
+          <li>Risiko: niedrig</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="risk-section">
+      <h2>Top-Risiken & Maßnahmen</h2>
+
+      <div class="risk-list">
+        <article class="risk-item high">
+          <strong>Hohe Incident-Rate bei DataBridge IT</strong>
+          <p>Maßnahme: Eskalationsgespräch vorbereiten und Ursachenanalyse anfordern.</p>
+        </article>
+
+        <article class="risk-item medium">
+          <strong>Fehlende Audit-Nachweise bei SecureNet AG</strong>
+          <p>Maßnahme: Dokumente bis zum nächsten Review-Termin nachfordern.</p>
+        </article>
+
+        <article class="risk-item low">
+          <strong>Leichte Verzögerung im ServiceDesk-Reporting</strong>
+          <p>Maßnahme: Reporting-Zyklus mit Provider abstimmen.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built with HTML, CSS & JavaScript · Use Case: IT Governance / Provider Management</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
