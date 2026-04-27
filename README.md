@@ -1,20 +1,21 @@
-# IT Governance & Provider Dashboard
+# IT Governance Dashboard
 
-Kleines Portfolio-Projekt mit HTML, CSS und JavaScript.
+Mini Webprojekt zur Visualisierung von Provider-Status, Risiken und IT-Governance-Prozessen.
 
-## Use Case
-
-Das Dashboard zeigt eine einfache Übersicht über externe IT-Provider, deren Status, SLA-Erfüllung, Risiken und offene Maßnahmen.
+## Live Demo
+https://dennis-812.github.io/h-rtrain/
 
 ## Features
-
-- KPI-Karten
-- Provider-Statuskarten
-- Filter nach Status
+- Übersicht über IT-Provider (Status: grün/gelb/rot)
+- KPI-Dashboard (SLA, Risiken, Maßnahmen)
+- Filterfunktion
 - Dark Mode
-- Risiko- und Maßnahmenübersicht
-- Responsive Layout für Desktop und Mobile
+- Responsive Design
 
-## Warum dieses Projekt?
+## Tech Stack
+- HTML
+- CSS
+- JavaScript
 
-Das Projekt verbindet IT, Governance, Provider Management und Cyber-Security-nahe Themen. Es eignet sich gut als kleines Portfolio-Projekt für Bewerbungen im Bereich Wirtschaftsinformatik, IT-Management, Consulting oder Governance/Risk/Compliance.
+## Ziel des Projekts
+Ziel war es, ein einfaches Dashboard zu entwickeln, das typische Aufgaben im Bereich IT Governance und Provider Management visualisiert.
